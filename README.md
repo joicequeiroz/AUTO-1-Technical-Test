@@ -7,7 +7,7 @@ Ruby 2.5.5 and DevKit (https://rubyinstaller.org/downloads/)
 
 Bundler (Gem install bundler);
 
-Clone project: git clone https:xxx
+Clone project: git clone https://github.com/joicequeiroz/AUTO-1-Technical-Test.git
 
 After to clone project, go to the project root and execute $bundle install
 
