@@ -8,10 +8,7 @@
 
   Then("I see the list of car sorted by manufactured date") do
     @filter.manufactured_date
-    @currentDate = DateTime.now
-    @start_date = '01/2015'
-    @end_date = '08/2019'
-    @currentDate.between?(@start_date, @end_date)
+    @filter.validate_date
   end
 
   When("I want to filter by Price Descending") do
@@ -21,5 +18,4 @@
   
   Then("I see the list of car sort by price descending") do
     @filter.compare_price
-    
   end

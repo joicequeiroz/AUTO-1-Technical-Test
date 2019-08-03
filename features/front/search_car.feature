@@ -12,7 +12,7 @@ Feature: Search Car
       Then I should be at a list of cars
       And I see the list of car sorted by manufactured date
 
-   @doing
+   @descending
    Scenario: Sort Car by Price Descending
       When I want to filter by Price Descending
       Then I see the list of car sort by price descending

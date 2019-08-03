@@ -1,4 +1,1 @@
 default: --no-source --color --format pretty
-prod:  ENVIRONMENT=prod
-chrome:  BROWSER=chrome
-firefox:  BROWSER=firefox

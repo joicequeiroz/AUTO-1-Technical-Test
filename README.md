@@ -17,7 +17,12 @@ Clone project:
 After to clone project, go to the project root and execute $ bundle install
 
 ## Run
-Default browser is firefox, but you can run in chrome browser
-* To run all tests(firefox): $ cucumber
-    * You can specify firefox browser using $ cucumber ENV['firefox']
-* To run all tests(chrome): $ cucumber ENV['chrome']
+Default browser is chrome
+
+##Tag
+* @search: for executing the scenario about search.
+* @descending: for executing the scenario about descending price.
+
+## Exemple:
+
+        $ cucumber --tag @search
