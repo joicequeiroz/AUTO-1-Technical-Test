@@ -14,17 +14,18 @@ class FilterPage < SitePrism::Page
         find('button[class*=filterButton]')
     end
 
-    def descending_price
-        sleep 10
-        @label = find("select[name='sort']")
-        @label.find('option', text:'Höchster Preis').select_option
-    end 
 
     def manufactured_date
         find("ul[data-qa-selector=spec-list] li[data-qa-selector=spec]")
         # @year.find(text.to_i.shoulbe be_between(2015, 2019))
     end
 
+    def descending_price
+        sleep 10
+        @label = find("select[name='sort']")
+        @label.find('option', text:'Höchster Preis').select_option
+    end 
+    
     def compare_price
         find("div[data-qa-selector=filter-price]")
     end       

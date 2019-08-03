@@ -1,17 +1,23 @@
 # AUTO 1 Technical Test
 This project was developed using the open-source Cucumber, Capybara and WebDriver frameworks for front-end automation of AutoHero site.
 
-#Requirement:
+## Step 1:
 
-Ruby 2.5.5 and DevKit (https://rubyinstaller.org/downloads/)
+Install:
+* Ruby 2.5.5 and DevKit (https://rubyinstaller.org/downloads/)
+* Bundler ($ gem install bundler);
 
-Bundler (Gem install bundler);
+## Step 2:
+Clone project: 
 
-Clone project: git clone https://github.com/joicequeiroz/AUTO-1-Technical-Test.git
+    * $ git clone https://github.com/joicequeiroz/AUTO-1-Technical-Test.git
 
-After to clone project, go to the project root and execute $bundle install
+## Step 3:
 
-#Information
-To run all tests(firefox): $cucumber
-To run all tests(chrome): $cucumber ENV=chrome
-To run all tests(ie): $cucumber ENV=ie
+After to clone project, go to the project root and execute $ bundle install
+
+## Run
+Default browser is firefox, but you can run in chrome browser
+* To run all tests(firefox): $ cucumber
+    You can specify firefox browser using $ cucumber ENV['firefox']
+* To run all tests(chrome): $ cucumber ENV['chrome']

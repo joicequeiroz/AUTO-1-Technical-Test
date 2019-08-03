@@ -6,7 +6,7 @@ Feature: Search Car
    In order to search cars
    I want to seen the list
 
-
+   @search
    Scenario: Cars From 2015
       When I filter to first registration
       Then I should be at a list of cars
