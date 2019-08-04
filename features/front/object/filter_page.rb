@@ -24,7 +24,7 @@ class FilterPage < SitePrism::Page
         end_date = Date.today
         start_validation = Date.parse('01-2015')
         end_validation = Date.parse('12-2019')
-        @validate_date = start_date > start_validation && end_date < end_validation
+        @validate_date = start_date < start_validation && end_date < end_validation
     end
 
     def descending_price
@@ -34,9 +34,9 @@ class FilterPage < SitePrism::Page
     end 
     
     def compare_price
-        a = find("div[data-qa-selector=price]", text: '37.490 €')
-        b = find("div[data-qa-selector=price]", text: '37.290 €')
-        value = ['37.290 €', '37.490 €']
-        asc_value = value.reverse  # => [37.490 €, 37.290 €]
+        @a = find("div[data-qa-selector=price]", text: '37.490 €')
+        @b = find("div[data-qa-selector=price]", text: '37.290 €')
+        @c = find("div[data-qa-selector=price]", text: '36.950 €')
+
     end       
 end

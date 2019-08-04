@@ -7,8 +7,8 @@
   end
 
   Then("I see the list of car sorted by manufactured date") do
-    @filter.manufactured_date
-    @filter.validate_date
+    puts @filter.manufactured_date
+    puts @filter.validate_date
   end
 
   When("I want to filter by Price Descending") do
@@ -18,4 +18,6 @@
   
   Then("I see the list of car sort by price descending") do
     @filter.compare_price
+    nums = ['37.490 €', '37.290 €', '36.950 €']
+    nums.each {|x| puts x}
   end

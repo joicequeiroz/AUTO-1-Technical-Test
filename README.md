@@ -23,6 +23,6 @@ Default browser is chrome
 * @search: for executing the scenario about search.
 * @descending: for executing the scenario about descending price.
 
-## Exemple:
+## Example:
 
         $ cucumber --tag @search
